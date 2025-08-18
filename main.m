@@ -7,3 +7,4 @@ Num_Children = 1;
 Marital_Status = 1;
 
 Social = 1;
+app = Fuzzy_UI;
