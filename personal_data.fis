@@ -1,0 +1,52 @@
+[System]
+Name='mamdanitype1'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=10
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Age'
+Range=[0 100]
+NumMFs=1
+MF1='young':'trimf',[-41.6666666666667 0 41.6666666666667]
+
+[Input2]
+Name='Num_Children'
+Range=[0 10]
+NumMFs=3
+MF1='zero':'trimf',[-4.16666666666667 0 4.16666666666667]
+MF2='few':'trimf',[0.833333333333333 5 9.16666666666667]
+MF3='many':'trimf',[5.83333333333333 10 14.1666666666667]
+
+[Input3]
+Name='Marital_Status'
+Range=[0 1]
+NumMFs=2
+MF1='single':'trimf',[-0.833333333333333 0 0.833333333333333]
+MF2='married':'trimf',[0.166666666666667 1 1.83333333333333]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=2
+MF1='low':'trimf',[-0.833333333333333 0 0.833333333333333]
+MF2='high':'trimf',[0.166666666666667 1 1.83333333333333]
+
+[Rules]
+0 3 1, 1 (1) : 1
+0 2 1, 1 (1) : 1
+0 1 2, 1 (1) : 1
+1 0 0, 1 (1) : 1
+0 2 2, 2 (1) : 1
+0 3 2, 2 (1) : 1
+1 0 2, 1 (1) : 1
+0 1 0, 1 (1) : 1
+1 0 1, 1 (1) : 1
+0 1 1, 1 (1) : 1
