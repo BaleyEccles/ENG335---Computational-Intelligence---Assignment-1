@@ -1,5 +1,5 @@
 [System]
-Name='mamdanitype2'
+Name='financial_background'
 Type='mamdani'
 Version=2.0
 NumInputs=2
@@ -15,25 +15,25 @@ DefuzzMethod='centroid'
 Name='Fixed_Expenses'
 Range=[0 100000]
 NumMFs=3
-MF1='low':'trimf',[-41666.6666666667 0 41666.6666666667]
-MF2='medium':'trimf',[8333.33333333334 50000 91666.6666666667]
-MF3='high':'trimf',[58333.3333333333 100000 141666.666666667]
+MF1='low':'trimf',[-41660 -9.095e-13 41660]
+MF2='medium':'trimf',[8340 50000 91660]
+MF3='high':'trimf',[58340 100000 141700]
 
 [Input2]
 Name='Real_Estate_Mortgage'
 Range=[0 10000000]
 NumMFs=3
-MF1='low':'trimf',[-4166666.66666667 0 4166666.66666667]
-MF2='medium':'trimf',[833333.333333333 5000000 9166666.66666667]
-MF3='high':'trimf',[5833333.33333333 10000000 14166666.6666667]
+MF1='low':'trimf',[-4166000 0 4166000]
+MF2='medium':'trimf',[834300 5000000 9166000]
+MF3='high':'linsmf',[4000000 8000000]
 
 [Output1]
 Name='Financial'
 Range=[0 1]
 NumMFs=3
-MF1='low':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='medium':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='high':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='low':'gaussmf',[0.1769 -1.388e-17]
+MF2='medium':'linsmf',[0.125 0.4583]
+MF3='high':'gaussmf',[0.1769 1]
 
 [Rules]
 1 1, 1 (1) : 1
