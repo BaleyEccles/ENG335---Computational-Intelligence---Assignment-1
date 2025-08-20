@@ -23,9 +23,9 @@ MF3='high':'trimf',[58340 100000 141700]
 Name='Real_Estate_Mortgage'
 Range=[0 10000000]
 NumMFs=3
-MF1='low':'trimf',[-4166000 0 4166000]
-MF2='medium':'trimf',[834300 5000000 9166000]
-MF3='high':'linsmf',[4000000 8000000]
+MF1='low':'trimf',[-4166000 0 2598944.59102902]
+MF2='medium':'trimf',[708003.518029903 1939313.98416887 3284960.42216359]
+MF3='high':'linsmf',[1939313.98416887 3865435.35620053]
 
 [Output1]
 Name='Financial'
